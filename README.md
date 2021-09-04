@@ -1,200 +1,34 @@
-<div align="center">
-  <br>
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat">
-    <img alt="jekyll-theme-yat →~ jekyll" src="https://user-images.githubusercontent.com/9413601/106478481-346fdf00-64e4-11eb-9385-1ab5329c3234.png" width="600">
-  </a>
+## Getting Started
 
-  <h1>JEKYLL YAT THEME</h1>
-
-</div>
-
-<h4 align="center">
-  <a href="https://jekyllrb.com/" target="_blank"><code>Jekyll</code></a> theme for elegant writers.
-</h4>
-
-<p align="center">
-  <a href="https://jeffreytse.github.io/jekyll-theme-yat">
-    <img src="https://github.com/jeffreytse/jekyll-theme-yat/workflows/Github%20Pages/badge.svg"
-      alt="Github Pages" />
-  </a>
-
-  <a href="http://badge.fury.io/rb/jekyll-theme-yat">
-    <img src="https://badge.fury.io/rb/jekyll-theme-yat.svg"
-      alt="Gem Version" />
-  </a>
-
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"
-      alt="License: MIT" />
-  </a>
-
-  <a href="https://liberapay.com/jeffreytse">
-    <img src="http://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay"
-      alt="Donate (Liberapay)" />
-  </a>
-
-  <a href="https://patreon.com/jeffreytse">
-    <img src="https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square"
-      alt="Donate (Patreon)" />
-  </a>
-
-  <a href="https://ko-fi.com/jeffreytse">
-  <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
-  alt="Donate (Ko-fi)" />
-  </a>
-</p>
-
-<div align="center">
-  <sub>Built with ❤︎ by
-  <a href="https://jeffreytse.net">jeffreytse</a> and
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat/graphs/contributors">contributors </a>
-  </sub>
-</div>
-
-<br>
-
-Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
-_YAT (Yet Another Theme)_ is a modern responsive theme. It's quite
-clear, clean and neat for writers and posts. **If you are an elegant
-writer and focus on content, don't miss it.**
-
-<p align="center">
-Like this elegant theme? You can give it a star or sponsor me!<br>
-I will respect your crucial support and say THANK YOU!
-</p>
-
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/91842897-6a840b00-ec87-11ea-95ca-52abcc1ac063.png" alt="demo-screenshot" width="100%"/>
-
-</p>
-
-<h4 align="center">BANNER</h4>
-
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/123897812-ae729a00-d996-11eb-96b8-b76ba926f555.gif" alt="demo-screenshot" width="100%"/>
-
-</p>
-
-## Features
-
-- Support beautiful **Night Mode**.
-- Modern responsive web design.
-- Full layouts `home`, `post`, `tags`, `archive` and `about`.
-- Uses font awesome 5 for icons.
-- Beautiful page banner with image and video.
-- Beautiful Syntax Highlight using [highlight.js][highlight-js].
-- RSS support using [Jekyll Feed][jekyll-feed] gem.
-- Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
-- Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
-- Complex and flexible table support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- MathJAX and LaTeX optional support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Media (Youtube, Spotify, etc.) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Google Translation support.
-- New post tag support.
-
-Also, visit the [Live Demo][yat-live-demo] site for the theme.
-
-## Installation
-
-There are three ways to install:
-
-- As a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
-- As a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible).
-- Forking/directly copying all of the theme files into your project.
-
-### Gem-based Theme Method
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "jekyll-theme-yat"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: jekyll-theme-yat
-```
-
-And then execute:
+First, run the development server:
 
 ```bash
-$ bundle
+npm run dev
+# or
+yarn dev
 ```
 
-Or install it yourself as:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```bash
-$ gem install jekyll-theme-yat
-```
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-### Remote Theme Method with GitHub Pages
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-To install:
+## Learn More
 
-Add this line to your Jekyll site's `Gemfile`:
+To learn more about Next.js, take a look at the following resources:
 
-```ruby
-gem "github-pages", group: :jekyll_plugins
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-And add this line to your Jekyll site's `_config.yml`:
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-```yaml
-# theme: owner/name --> Don't forget to remove/comment the gem-based theme option
-remote_theme: "jeffreytse/jekyll-theme-yat"
-```
+## Deploy on Vercel
 
-And then execute:
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-```bash
-$ bundle
-```
-
-### GitHub Pages without limitation
-
-GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins/themes](https://pages.github.com/versions/). **In other words, the third-party gems will not work normally**.
-
-To use the third-party gem in GitHub Pages without limitation:
-
-Here is a GitHub Action named [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) for Jekyll site deployment conveniently. 👍
-
-## Usage
-
-Add or update your available layouts, includes, sass and/or assets.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_data`, `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-yat.gemspec` accordingly.
-
-## Contributing
-
-Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
-
-You can start by [opening an issue](https://github.com/jeffreytse/jekyll-theme-yat/issues/new) describing the problem that you're looking to resolve and we'll go from there.
-
-## License
-
-This theme is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php) © JeffreyTse.
-
-<!-- External links -->
-
-[jekyll]: https://jekyllrb.com/
-[yat-git-repo]: https://github.com/jeffreytse/jekyll-theme-yat/
-[yat-live-demo]: https://jeffreytse.github.io/jekyll-theme-yat/
-[jekyll-spaceship]: https://github.com/jeffreytse/jekyll-spaceship
-[jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
-[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
-[jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[highlight-js]: https://github.com/highlightjs/highlight.js
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
