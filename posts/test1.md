@@ -1,10 +1,14 @@
 ---
-title: 'Test Post'
-date: 'Sep 04 2021'
-excerpt: 'This is the excerpt'
-cover_image: '/images/posts/img1.jpeg'
+title: Test Post2
+author: zeromountain
+date: 2021-09-04
+excerpt: dgdgdgdgagagag
 ---
 
+Test Post 2
+
+- adsgasdg
+- adsgsadga
 ## Heading Two
 
 * Itme1
