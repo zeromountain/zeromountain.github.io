@@ -4,9 +4,11 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Layout from "../../components/Layout";
-
+import { Container } from "../../styles/Container";
+import { Title } from "../../styles/TextElements";
 interface BlogPostProps {
   content: string;
+  excerpt?: string;
   frontmatter: {
     title: string;
     author: string;
@@ -14,16 +16,20 @@ interface BlogPostProps {
   };
 }
 
-const BlogPost: NextPage<BlogPostProps> = ({ frontmatter, content }) => {
+const BlogPost: NextPage<BlogPostProps> = ({
+  frontmatter,
+  excerpt,
+  content,
+}) => {
   return (
-    <Layout pageTitle={frontmatter.title}>
-      <div>
-        <h1>{frontmatter.title}</h1>
+    <Layout pageTitle={frontmatter.title} description={excerpt}>
+      <Container>
         <h3>
           By {frontmatter.author} - {frontmatter.date}
         </h3>
+        <Title>{frontmatter.title}</Title>
         <ReactMarkdown>{content}</ReactMarkdown>
-      </div>
+      </Container>
     </Layout>
   );
 };
@@ -46,7 +52,7 @@ export const getStaticProps: GetStaticProps<BlogPostProps> = async ({
 }) => {
   const slug = params?.slug;
   const md = fs.readFileSync(path.join("./posts", `${slug}.md`)).toString();
-  const { data, content } = matter(md);
+  const { data, content, excerpt } = matter(md);
   const date = data.date.toLocaleDateString("en-US", {
     year: "numeric",
     month: "numeric",
@@ -59,6 +65,7 @@ export const getStaticProps: GetStaticProps<BlogPostProps> = async ({
         author: data.author,
         date,
       },
+      excerpt,
       content,
     },
   };

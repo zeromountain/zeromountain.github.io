@@ -13,7 +13,6 @@ interface BlogProps {
 }
 
 const Blog: NextPage<BlogProps> = ({ posts }) => {
-  console.log(posts);
   return (
     <Layout pageTitle="Blog">
       <Hero />
@@ -37,7 +36,7 @@ export async function getStaticProps() {
       excerpt,
     };
   });
-  console.log(posts);
+
   return {
     props: {
       posts,
