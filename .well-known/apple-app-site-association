@@ -1,0 +1,21 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "6G788T9QS4.com.zeromountain.pigRun"
+        ],
+        "components": [
+          {
+            "/": "/pig-run/join",
+            "comment": "짝꿍 초대"
+          },
+          {
+            "/": "/pig-run/join/",
+            "comment": "짝꿍 초대"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -5,6 +5,7 @@
 | 파일 | 용도 |
 |---|---|
 | `.well-known/assetlinks.json` | Android 앱 링크 인증 — 짝꿍 초대 주소 `https://zeromountain.github.io/pig-run/join/?code=…` 를 누르면 돼지런이 바로 열리게 한다. pig-run 의 `tool/site/assetlinks.py` 로 만든다 (pig-run `docs/W16_INVITE_LINK_PLAN.md` §6-1) |
+| `.well-known/apple-app-site-association` | iOS 유니버설 링크 인증 — 같은 초대 주소를 iPhone 에서 누르면 돼지런이 바로 열리게 한다. 확장자 없이 둔다. pig-run 의 `tool/site/aasa.py` 로 만든다 (팀 ID·번들 ID 를 pig-run 의 Xcode 프로젝트에서 읽는다) |
 | `.nojekyll` | Jekyll 을 끈다. 없으면 점으로 시작하는 `.well-known` 폴더가 빠진 채 올라간다 |
 
 - 루트에 `pig-run` 이라는 폴더를 만들지 않는다 (프로젝트 사이트 `/pig-run/` 을 가린다).
