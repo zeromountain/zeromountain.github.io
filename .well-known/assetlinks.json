@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.zeromountain.pig_run",
+      "sha256_cert_fingerprints": [
+        "16:A5:6D:E5:34:E7:91:3E:D0:46:91:F5:33:4C:1F:4A:18:5B:27:68:1C:A9:50:B1:C7:E8:E2:BE:80:26:0D:10"
+      ]
+    }
+  }
+]
